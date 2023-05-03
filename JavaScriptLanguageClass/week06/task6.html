@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip / Sales Tax Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#" class="active">Calculations Page</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Sales Tax / Tip Calculator</h1>
+    </header>
+    <main>
+        <section id="calculator">
+            <article>
+                <h2>Subtotal & Percentages</h2>
+                <div>
+                    <label for="expense">Cost of Meal:</label>
+                    <input type="text" id="expense" name="expense">
+                </div>
+                <div>
+                    <label for="rateOfTip">Tip %:</label>
+                    <input type="text" id="rateOfTip" name="rateOfTip">
+                </div>
+                <div>
+                    <label for="saleTax">Sales Tax %:</label>
+                    <input type="text" id="saleTax" name="saleTax">
+                </div>
+                <div>
+                    <input type="button" id="doStuff" value="Calculate">
+                </div>
+                <h2>Total Cost</h2>
+                <div>
+                    <label for="total">Total:</label>
+                    <input type="text" id="total" name="total" disabled>
+                </div>
+            </article>
+            <section>
+                <h2>Previous Calculations</h2>
+                <p>
+                    Sort by: 
+                    <select id="sortBy">
+                        <option value="costAscending">Cost Ascending</option>
+                        <option value="costDescending">Cost Descending</option>
+                    </select>
+                </p>
+                <div id="calculations">
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Sales Tax / Tip Calculator | Leven Barney
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task6.js"></script>
+</body>
+</html>
